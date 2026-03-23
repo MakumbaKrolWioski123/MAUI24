@@ -48,6 +48,8 @@ public partial class NewPage3 : ContentPage
                 string nazwaPliku = wynik.FileName;
                 string pelnaSciezka = wynik.FullPath;
                 await DisplayAlert("Wybrano plik", $"Nazwa: {nazwaPliku}", "OK");
+                string tresc = await File.ReadAllTextAsync(pelnaSciezka);
+                NotatkaEditor.Text = tresc;
                 OperacjeLabel.Text = OperacjeLabel.Text + "\n" + DateTime.Now.ToString("yyyy-MM-dd HH-mm") + " Import";
             }
         }

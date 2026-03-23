@@ -32,3 +32,15 @@
         }
     }
 }
+/*nazwa funkcji: OnZapiszClicked
+ * opis funkcji: zapisuje plik notatka.txt do folderu AppDataDirectory
+ * parametry: object? sender, EventArgs e
+ *zwracany typ: brak
+ *autor: Ja
+ *
+ *nazwa funkcji: OnOdczytajClicked
+ * opis funkcji: odczytuje tekst z pliku notatka.txt i wyswietla go w NotatkaLabel
+ * parametry: object? sender, EventArgs e
+ *zwracany typ: brak
+ *autor: Ja
+*/

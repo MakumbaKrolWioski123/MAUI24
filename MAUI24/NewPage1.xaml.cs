@@ -42,3 +42,16 @@ public partial class NewPage1 : ContentPage
         }
     }
 }
+
+/*nazwa funkcji:DodajWpisClicked
+ * opis funkcji: dodaje wpis do dziennik.txt
+ * parametry: object? sender, EventArgs e
+ *zwracany typ: brak
+ *autor: Ja
+*/
+/*nazwa funkcji:
+ * opis funkcji: 
+ * parametry: object? sender, EventArgs e
+ *zwracany typ: brak
+ *autor: Ja
+*/
