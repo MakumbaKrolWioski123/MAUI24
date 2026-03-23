@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI24.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label 
+                Text="Zadanie 1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+            <Entry
+                x:Name="ZapiszEntry"
+                Placeholder="Wpisz tu swoją notatke"
+                SemanticProperties.Hint="Type something to save" />
+
+            <Button
+                x:Name="ZapiszButton"
+                Text="Zapisz Notatkę" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnZapiszClicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="OdczytajButton"
+                Text="Odczytaj Notatkę"
+                SemanticProperties.Hint="Reads the saved note"
+                Clicked="OnOdczytajClicked"
+                HorizontalOptions="Fill" />
+
+            <Label
+                x:Name="NotatkaLabel"
+                Text="Twoja notatka pojawi się tutaj"
+                SemanticProperties.Description="Displays the saved note"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
