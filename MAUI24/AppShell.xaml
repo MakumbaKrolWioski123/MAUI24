@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MAUI24.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MAUI24"
+    Title="MAUI24">
+    <TabBar>
+        <Tab Title="Zadanie1">
+            <ShellContent
+        Title="Zadanie1"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+        </Tab>
+        <Tab Title="Zadanie2">
+            <ShellContent
+        Title="Zadanie2"
+        ContentTemplate="{DataTemplate local:NewPage1}"
+        Route="NewPage1" />
+        </Tab>
+        <Tab Title="Zadanie3">
+            <ShellContent
+                Title="Zadanie3"
+                ContentTemplate="{DataTemplate local:NewPage2}"
+                Route="NewPage2" />
+        </Tab>
+        <Tab Title="Zadanie4">
+            <ShellContent
+                Title="Zadanie4"
+                ContentTemplate="{DataTemplate local:NewPage3}"
+                Route="NewPage3" />
+        </Tab>
+    </TabBar>
+
+</Shell>
