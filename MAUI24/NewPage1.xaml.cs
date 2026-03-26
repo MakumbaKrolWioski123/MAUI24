@@ -18,12 +18,9 @@ public partial class NewPage1 : ContentPage
     private async void DodajWpisClicked(object? sender, EventArgs e)
     {
         string sciezka = Path.Combine(FileSystem.Current.AppDataDirectory, "dziennik.txt");
-        string sciezka2 = Path.Combine(FileSystem.Current.AppDataDirectory, "historia.txt");
         string tresc = DateTime.Now.ToString("yyyy-MM-dd HH-mm") + " " + WpisEditor.Text;
 
         await File.WriteAllTextAsync(sciezka, tresc);
-        await File.AppendAllTextAsync(sciezka2, tresc + Environment.NewLine);
-
         await DisplayAlert("Zapisano", "Notatka zosta³a zapisana.", "OK");
         DziennikLabel.Text = DziennikLabel.Text+"\n"+tresc;
     }
@@ -44,13 +41,13 @@ public partial class NewPage1 : ContentPage
 }
 
 /*nazwa funkcji:DodajWpisClicked
- * opis funkcji: dodaje wpis do dziennik.txt
+ * opis funkcji: dodaje wpis do dziennik.txt i zapisuje go w historia.txt
  * parametry: object? sender, EventArgs e
  *zwracany typ: brak
  *autor: Ja
 */
-/*nazwa funkcji:
- * opis funkcji: 
+/*nazwa funkcji:WyczyscClicked
+ * opis funkcji:Czyœci dziennik i usuwa plik dziennik.txt
  * parametry: object? sender, EventArgs e
  *zwracany typ: brak
  *autor: Ja

@@ -55,7 +55,6 @@ public partial class NewPage3 : ContentPage
         }
 
         catch (Exception ex)
-
         {
 
             await DisplayAlert("B³¹d", $"Nie uda³o siê wybraæ pliku: {ex.Message}", "OK");
@@ -63,3 +62,20 @@ public partial class NewPage3 : ContentPage
         }
     }
 }
+
+/*
+ * nazwa funkcji:EksportClicked
+ * opis funkcji:Zapisuje notatke w nastepnej linijce notatki_eksport.txt i dodaje do dziennika date i wykonane zadania
+ * parametry: object? sender, EventArgs e
+ *zwracany typ: brak
+ *autor: Ja
+*/
+
+
+/*nazwa funkcji:ImportClicked
+ * opis funkcji:Wybiera plik tekstowy i wyswietla go w notatka editor aby moc go edytowac
+ * parametry: object? sender, EventArgs e
+ *zwracany typ: brak
+ *autor: Ja
+*/
+

@@ -29,3 +29,10 @@ public partial class NewPage2 : ContentPage
     new Plik { Nazwa = "notatka2.txt", Rozmiar = "2 MB" }
     };
 }
+
+/*nazwa funkcji:DodajWpisClicked
+ * opis funkcji: dodaje wpis do dziennik.txt
+ * parametry: object? sender, EventArgs e
+ *zwracany typ: brak
+ *autor: Ja
+*/
